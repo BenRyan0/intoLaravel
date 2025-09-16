@@ -1,4 +1,4 @@
-<x-layout>
+<x-app-layout>
   <div class="flex items-center justify-center min-h-screen ">
    <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg  min-w-[400px] w-full">
     <h1 class="text-2xl font-semibold mb-4 text-gray-800">New Note Information</h1>
@@ -27,14 +27,13 @@
         >
           Submit
         </button>
-        <button
-          type="submit"
-          class="bg-neutral-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-700 transition"
-        >
-          Cancel
-        </button>
+     
+          <a href="{{ route('note.index')}}" class="bg-neutral-700 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-700 transition">
+            Cancel
+          </a>
+       
       </div>
     </form>
   </div>
 </div>
-</x-layout>
+</x-app-layout>

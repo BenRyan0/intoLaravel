@@ -1,6 +1,6 @@
-<x-layout>
+<x-app-layout>
   <div class="flex items-center justify-center min-h-screen ">
-   <div class="bg-white p-6 rounded-2xl shadow-lg max-w-lg  min-w-[400px] w-full">
+   <div class="bg-white p-6 rounded-2xl shadow-lg w-5/12  min-w-[500px] ">
     <h1 class="text-2xl font-semibold mb-4 text-gray-800">Note Information</h1>
     <form action="{{route('note.update', $note)}}" method="POST">
     @csrf
@@ -19,7 +19,7 @@
       </div>
       <div class="mb-4">
         <label for="cardholder-name" class="block text-sm font-medium text-gray-700">Note </label>
-        <textarea name="note" rows="4" id="note" class="w-full p-1 border-gray-300 focus:ring-blue-500 focus:border-blue-500 shadow-sm">
+        <textarea name="note" rows="6" id="note" class="w-full p-1 border-gray-300 focus:ring-blue-500 focus:border-blue-500 shadow-sm">
         {{$note -> note}}</textarea>
       </div>
       <!-- Submit Button -->
@@ -40,5 +40,5 @@
     </form>
   </div>
 </div>
-</x-layout>
+</x-app-layout>
 
